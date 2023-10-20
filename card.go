@@ -11,9 +11,9 @@ type Card struct {
 	answer   string
 }
 
-func getCardsList() []Card {
+func getCardsList(inputFilePath string) []Card {
 	cards := []Card{}
-	rawData, err := os.ReadFile("cards.txt")
+	rawData, err := os.ReadFile(inputFilePath)
 	if err != nil {
 		log.Fatal(err.Error())
 	}

@@ -22,26 +22,27 @@ var colStyle = &props.Cell{
 	BorderThickness: 0.5,
 }
 
-var questionTextStyle = props.Text{
-	Size:              30,
-	Align:             align.Center,
-	Top:               10,
-	BreakLineStrategy: breakline.EmptyLineStrategy,
-}
+func getMaroto(cards []Card, questionFontSize, answerFontSize float64) core.Maroto {
 
-var answerTextStyle = props.Text{
-	Size:  20,
-	Align: align.Center,
-	Top:   10,
-}
+	var questionTextStyle = props.Text{
+		Size:              questionFontSize,
+		Align:             align.Center,
+		Top:               10,
+		BreakLineStrategy: breakline.EmptyLineStrategy,
+	}
 
-func getMaroto(cards []Card) core.Maroto {
+	var answerTextStyle = props.Text{
+		Size:  answerFontSize,
+		Align: align.Center,
+		Top:   10,
+	}
+
 	cfg := config.NewBuilder().Build()
 	m := maroto.New(cfg)
 
 	rows := []core.Row{}
 
-	//Create list of card rows to add to the 
+	//Create list of card rows to add to the
 	for _, card := range cards {
 		rows = append(rows,
 			row.New(80).Add(

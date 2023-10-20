@@ -1,5 +1,9 @@
 # Dependency
 go.sum
 
+# Input
+cards.txt
+
 # Output
 /docs
+flashcardpdf
