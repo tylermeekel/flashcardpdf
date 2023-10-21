@@ -1,8 +1,6 @@
 package main
 
 import (
-	"log"
-	"os"
 	"strings"
 )
 
@@ -11,15 +9,11 @@ type Card struct {
 	answer   string
 }
 
-func getCardsList(inputFilePath string) []Card {
+func getCardsList(input string) []Card {
 	cards := []Card{}
-	rawData, err := os.ReadFile(inputFilePath)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
 
 	//split each card into a slice of strings
-	cardsStrings := strings.Split(string(rawData), "####")
+	cardsStrings := strings.Split(string(input), "####")
 	for _, cardString := range cardsStrings {
 		var card Card
 

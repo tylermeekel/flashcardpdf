@@ -5,6 +5,7 @@ go 1.21.3
 require (
 	github.com/boombuler/barcode v1.0.1 // indirect
 	github.com/f-amaral/go-async v0.1.1 // indirect
+	github.com/go-chi/chi/v5 v5.0.10 // indirect
 	github.com/google/uuid v1.3.1 // indirect
 	github.com/hhrutter/lzw v1.0.0 // indirect
 	github.com/hhrutter/tiff v1.0.1 // indirect
