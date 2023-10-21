@@ -2,6 +2,8 @@ module github.com/tylermeekel/flashcardpdf
 
 go 1.21.3
 
+require github.com/johnfercher/maroto/v2 v2.0.0-alpha.41
+
 require (
 	github.com/boombuler/barcode v1.0.1 // indirect
 	github.com/f-amaral/go-async v0.1.1 // indirect
@@ -9,7 +11,6 @@ require (
 	github.com/hhrutter/lzw v1.0.0 // indirect
 	github.com/hhrutter/tiff v1.0.1 // indirect
 	github.com/johnfercher/go-tree v1.0.5 // indirect
-	github.com/johnfercher/maroto/v2 v2.0.0-alpha.41 // indirect
 	github.com/jung-kurt/gofpdf v1.16.2 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/pdfcpu/pdfcpu v0.5.0 // indirect
